@@ -5,6 +5,7 @@ def call(body){
 	def mapvars = [:]
 	body.resolveStrategy = Closure.DELEGATE_FIRST
 	body.delegate = mapvars
+	body()
 	
 	def var1 = "mapvars"
 	def var2 = mapvars.var2
