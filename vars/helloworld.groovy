@@ -2,9 +2,9 @@
 
 import groovy.json.*
 def call(body){
-	def mapVars = [:]
+	def mapvars = [:]
 	body.resolveStrategy = Closure.DELEGATE_FIRST
-	body.delegate = mapVars
+	body.delegate = mapvars
 	
 	def var1 = mapvars.var1
 	def var2 = mapvars.var2
