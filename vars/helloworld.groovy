@@ -7,7 +7,7 @@ def call(body){
 	body.delegate = mapvars
 	body()
 	
-	def var1 = "mapvars"
+	def var1 = mapvars.var1
 	def var2 = mapvars.var2
 	
 	println(var1 + " ----------- " + var2)
